@@ -1,0 +1,41 @@
+.cmtContainer{
+	width: 550px;
+	height: 110px;
+	border: 2px solid #AAAAAA;
+	margin-top: 3px;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	font-family: Verdana;
+	display: block;
+	border-radius: 0.5em;
+}
+.cmtContent{
+	height:100%;
+	width:70%;
+	display:inline-block;
+}
+.cmtUser{
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 20%;
+	width: 400px;
+	display: inline;
+	float:left;
+}
+
+.cmtComment{
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 75%;
+	width: 400px;
+	display: block;
+	float:left;
+}
+.cmtFeature{
+	display:inline-block;
+	float:right;
+	width: 25%;
+	height: 100%;
+}

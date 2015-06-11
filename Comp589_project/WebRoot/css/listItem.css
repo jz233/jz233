@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+
+.picTextGroup {width:352px; margin:0 auto;color:#666;line-height:20px; clear: both; padding:5px;
+				height:0px; opacity:0;display:block;}
+.picTextGroup img {margin:0 10px 0 0;border:1px #A5C0E1 solid;background:#fff;padding:1px;}
+.picTextGroup .title {display:inline; color:#039;font-size:18px;font-weight: bold;line-height:26px;}
+.picTextGroup .title a {color:#039;}
+.picTextGroup a {color:#666;}
+.picTextGroup .moreT a {color:#A4621C;}
+.picTextGroup a:hover {color:#CC0000;}
+
+ a {color: #000;text-decoration:none}
+ a:hover {text-decoration:underline;}
+.picTextGroup {text-align:left;margin:0 auto;line-height:20px;color:#333;width:92%}
+.picTextGroup img {margin:0 4px 0 0;float:left;}			/*图文混排*/
+.picTextGroup a {color:#333;}
+.picTextGroup p {clear:none}
+.matchDate {}
+.title div{display:inline-block; width:80px; text-align: center;}

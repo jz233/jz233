@@ -1,0 +1,72 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.8.3.min.js"></script>
+    <title></title>
+    <meta name="keywords" content=" keywords" />
+    <meta name="description" content="description" />
+    
+	<style type="text/css">
+	    body{font-size:13px}
+	    .clsInit{width:800px;height::35px;line-height:35px;padding-left:10px}
+	    .clsTip{padding-top:5px;background-color:#eee;display:none}
+	    .btn{border:solid 1px #666;padding:2px;width:65px;float:right;margin-top:6px;margin-right:6px;filter:progid:DXImageTransform.Mcrosoft.Gradient(GraientType=0,StartColorStr=#FFFFFF,EndColorStr=#ECE9D8);}
+	    
+	</style>
+</head>
+
+<body>
+<script type="text/javascript">
+    $(function(){
+        function objInit(obj){
+            return $(obj).html('<option>Please Select</option>');
+        }
+        var arrData={
+	            West:{SouthWest:'Dallas Mavericks,Houston Rockets,Memphis Grizzlies,New Orleans Pelicans, San Antonio Spurs',
+	                    NorthWest:'Denver Nuggets,Minnesota Timbervolves,Oklahoma City Thunder,Portland Trail Blazers,Utah Jazz',
+	                    Pacific:'Golden State Warriors,Los Angeles Lakers,Los Angeles Clippers,Phoenix Suns,Sacramento Kings'},
+	            East:{Atlantic:'Boston Celtics,Brooklyn Nets,New York Knicks, Philadelphia 76ers,Toronto Raptors',
+	                    Central:'Chicago Bulls,Cleveland Cavaliers,Detroit Pistons,Indiana Pacers,Milwaukee Bucks',
+	                    SouthEast:'Atlanta Hawks,Charlotte Hornets,Miami Heat,Orlando Magic,Washington Wizards'}
+        };
+        $.each(arrData,function(pF){	/* pF为key */
+            $('#selF').append('<option>'+pF+'</option>');
+        });
+        $('#selF').change(function(){
+            objInit('#selT');	
+            objInit('#selC');
+            $.each(arrData,function(pF,pS){	/* pF:key   pS:value */
+                if($('#selF option:selected').text()==pF){
+                    $.each(pS,function(pT,pC){		/* 将pS(之前的value)作为key，继续取出下一级的value值 */
+                        $('#selT').append('<option>'+pT+'</option>');
+                    });
+                    $('#selT').change(function(){
+                        objInit('#selC');
+                        $.each(pS,function(pT,pC){
+                            if($('#selT option:selected').text()==pT){
+                                $.each(pC.split(","),function(){
+                                    $('#selC').append('<option>'+this+'</option>');
+                                });
+                            }
+                        });
+                        
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+<div class="clsInit" >
+
+    Conference:<select id="selF"><option>Please Select</option></select>
+    Division:<select id="selT"><option>Please Select</option></select>
+    Team:<select id="selC"><option>Please Select</option></select>
+    <input type="button" value="Search" id="Button1" class="btn" />
+</div>
+<div class="clsInit" id="divTip"></div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+/* body{
+	
+	font-family:Arial, Sans-Serif;
+	font-size:0.75em;
+} */
+.search-background {
+	display: none;
+	font-size: 13px;
+	font-weight: bold;
+	height:160px;
+	position: absolute;
+	padding-top:140px;
+	text-align: center;
+	opacity:0.5;filter: alpha(opacity=50) ;
+	text-decoration: none;
+	width: 520px;
+	color:#FFFFFF;
+	text-shadow: #fff 0px 0px 20px;
+	}
+	
+search-background label{	
+
+	border:solid #66FF00 1px;
+}	
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/moment.js"></script>
+<style type="text/css">
+	.cmtContainer{
+		width: 550px;
+		height: 110px;
+		border: 2px solid #AAAAAA;
+		margin-top: 3px;
+		background-color: #FFFFFF;
+		font-size: 12px;
+		font-family: Verdana;
+		display: block;
+		border-radius: 1em;
+	}
+.cmtUser{
+	padding-top: 5px;
+	margin-left: 10px;
+	height: 10%;
+	width: 400px;
+	display: inherit;
+	float:left;
+}
+.cmtContent{
+	padding-top: 15px;
+	margin-left: 10px;
+	height: 70%;
+	width: 400px;
+	display: block;
+	float:left;
+}
+.cmtFeature{
+	float: right;
+	clear: right;
+	width: 100px;
+	height: 70%;
+	padding:5px;
+}
+.cmtFeature span{
+	width: 100px;
+	padding-top:3px;
+	height: 20%;
+	display:block; 
+}
+	
+	
+</style>
+
+<html>
+	<body>
+		<div>moment().format('YYYY-MM-dd hh:mm:ss');</div>
+		
+		
+		<div class="cmtContainer">
+			<span class="cmtUser">user+timestamp</span>
+			<span class="cmtContent">good</span>
+			<div class="cmtFeature">
+				<span class="cmtStyle">Offensive</span>		
+				<span class="cmtTempo">Fast</span>		
+				<span class="cmtIntensity">Strong</span>		
+			</div> 
+			
+		</div>
+		<div class="cmtContainer">
+			<span class="cmtUser">user+timestamp</span>
+			<span class="cmtContent">good</span>
+			<div class="cmtFeature">
+				<span class="cmtStyle">Offensive</span>		
+				<span class="cmtTempo">Fast</span>		
+				<span class="cmtIntensity">Strong</span>		
+			</div> 
+			
+		</div>
+		<div class="cmtContainer">
+			<span class="cmtUser">user+timestamp</span>
+			<span class="cmtContent">good</span>
+			<div class="cmtFeature">
+				<span class="cmtStyle">Offensive</span>		
+				<span class="cmtTempo">Fast</span>		
+				<span class="cmtIntensity">Strong</span>		
+			</div> 
+			
+		</div>
+		<div class="cmtContainer">
+			<span class="cmtUser">user+timestamp</span>
+			<span class="cmtContent">good</span>
+			<div class="cmtFeature">
+				<span class="cmtStyle">Offensive</span>		
+				<span class="cmtTempo">Fast</span>		
+				<span class="cmtIntensity">Strong</span>		
+			</div> 
+			
+		</div>
+		<div class="cmtContainer">
+			<span class="cmtUser">user+timestamp</span>
+			<span class="cmtContent">good</span>
+			<div class="cmtFeature">
+				<span class="cmtStyle">Offensive</span>		
+				<span class="cmtTempo">Fast</span>		
+				<span class="cmtIntensity">Strong</span>		
+			</div> 
+			
+		</div>
+	</body>
+</html>
